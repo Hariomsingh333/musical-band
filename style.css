@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 body {
+  background-image: url(./background.jpg);
+  font-family: "Tourney", cursive;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
   text-align: center;
-  text-transform: capitalize;
-  font-family: monospace;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,12 +19,18 @@ button {
   padding: 3rem;
   font-size: 2rem;
   margin: 2rem;
+  border: none;
   display: flex;
-  transition: 0.5s;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  transition: 0.2s all ease-in;
 }
 
 button:hover {
-  box-shadow: 12px 12px 12px 0;
+  transform: translateY(-0.25rem);
+  background: linear-gradient(150deg, rgb(214, 194, 194), rgb(241, 152, 51));
+  color: lightgoldenrodyellow;
+  box-shadow: 0px 12px 12px 0 rgba(46, 44, 44, 0.76);
 }
 
 .btn {
@@ -40,6 +52,10 @@ h3 {
 a {
   text-decoration: none;
   padding-left: 0.7rem;
+}
+
+footer {
+  font-family: monospace;
 }
 
 @media screen and (max-width: 500px) {
